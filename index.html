@@ -43,43 +43,42 @@
     <meta name="msapplication-navbutton-color" content="#111111">
     <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
     <style>
+        .lawyer-img {
+        width: 100%;
+        max-width: 220px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 0 auto 15px;
+        display: block;
+      }
+
       .lawyer-card {
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        transition: transform 0.3s ease;
+      }
 
-.lawyer-card:hover {
-  transform: translateY(-5px);
-}
+      .lawyer-card:hover {
+        transform: translateY(-5px);
+      }
 
-.lawyer-card img {
-  width: 100%;
-  max-width: 220px;
-  height: auto;
-  margin: 0 auto 15px;
-  border-radius: 6px;
-  object-fit: cover;
-}
+      .lawyer-card h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #00324b;
+      }
 
-.lawyer-card h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 5px 0 3px;
-  color: #00324b;
-}
-
-.lawyer-role {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-}
-.inner__media.media-padding{
-  padding: 100px 0 !important;
-}
+      .lawyer-role {
+        font-size: 14px;
+        color: #777;
+      }
+      .inner__media.media-padding {
+          padding: 100px 0 !important;
+        }
 
     </style>
     <!-- Custom Browser Color End -->
@@ -607,12 +606,12 @@
       <!-- Section Info End -->
 
       <!-- Section Media Start -->
-  <section class="inner__media media-padding bg-light">
+<section class="inner__media media-padding bg-light">
   <div class="media__wrapper">
 
     <!-- Lawyers Section Heading -->
-    <div class="section-title text-center " style="margin-bottom: 40px; text-align: center;">
-      <h2 class="text-dark" style="font-size: 32px; font-weight: 600;">Our Attorneys</h2>
+    <div class="section-title text-center" style="margin-bottom: 40px; text-align: center;">
+      <h2 class="text-dark" style="font-size: 6rem;-weight: 600;">Our Attorneys</h2>
       <p class="section-text" style="color: #666; font-size: 16px;">Meet the legal minds behind Woolfe Law Firm</p>
     </div>
 
@@ -627,8 +626,8 @@
 
               <!-- Lawyer 1 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center" style="max-height: 100%;">
-                  <img style="max-height: 100%;" src="img/lawyer.jpg" alt="Gias Uddin">
+                <div class="lawyer-card text-center">
+                  <img src="img/lawyer.jpg" alt="Ashar Malik" class="lawyer-img">
                   <h4>Ashar Malik</h4>
                   <p class="lawyer-role">Solicitor</p>
                 </div>
@@ -636,8 +635,8 @@
 
               <!-- Lawyer 2 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center" style="max-height: 100%;">
-                  <img style="max-height: 100%;" src="img/alim.jpg" alt="Shakil Shah">
+                <div class="lawyer-card text-center">
+                  <img src="img/alim.jpg" alt="Alim Hasan Islam" class="lawyer-img">
                   <h4>Alim Hasan Islam</h4>
                   <p class="lawyer-role">Casework Manager</p>
                 </div>
@@ -645,8 +644,8 @@
 
               <!-- Lawyer 3 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center" style="max-height: 100%;">
-                  <img style="max-height: 100%;" src="img/random.png" alt="Aashar Malik">
+                <div class="lawyer-card text-center">
+                  <img src="img/random.png" alt="Jasmine Ahmed" class="lawyer-img">
                   <h4>Jasmine Ahmed</h4>
                   <p class="lawyer-role">Required</p>
                 </div>
@@ -654,8 +653,8 @@
 
               <!-- Lawyer 4 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center" style="max-height: 100%;">
-                  <img style="max-height: 100%;" src="img/random.png" alt="Alim Hasan Islam">
+                <div class="lawyer-card text-center">
+                  <img src="img/random.png" alt="Dewan" class="lawyer-img">
                   <h4>Dewan</h4>
                   <p class="lawyer-role">Required</p>
                 </div>
@@ -663,8 +662,8 @@
 
               <!-- Lawyer 5 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center" style="max-height: 100%;">
-                  <img style="max-height: 100%;" src="img/shakil.jpg" alt="Sarah Ahmed">
+                <div class="lawyer-card text-center">
+                  <img src="img/shakil.jpg" alt="Shakil Shah" class="lawyer-img">
                   <h4>Shakil Shah</h4>
                   <p class="lawyer-role">Solicitor</p>
                 </div>
@@ -672,10 +671,10 @@
 
               <!-- Lawyer 6 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center" style="max-height: 100%;">
-                  <img style="max-height: 100%;" src="img/gias.jpg" alt="Omar Farooq">
+                <div class="lawyer-card text-center">
+                  <img src="img/gias.jpg" alt="Gias Uddin" class="lawyer-img">
                   <h4>Gias Uddin</h4>
-                  <p class="lawyer-role">Drector/Solicitor</p>
+                  <p class="lawyer-role">Director/Solicitor</p>
                 </div>
               </div>
 
@@ -690,6 +689,7 @@
 
   </div>
 </section>
+
 
 
       <!-- Section Media End -->
@@ -935,35 +935,24 @@
 
     <!-- Footer Start -->
     <footer class="footer bg-dark">
-
-      <!-- Footer Content Start -->
       <div class="footer__content">
         <div class="container-fluid p-0">
           <div class="row g-0">
             <div class="col-12 content-block">
-
-              <!-- Footer Logo Start -->
               <div class="footer__logo column">
-                <!-- Your Logo Here -->
                 <img src="img/woolfee-logo.png" alt="Allurio">
               </div>
-              <!-- Footer Logo End -->
-
-              <!-- Footer Slogan Start -->
               <div class="footer__slogan column">
                 <p class="text-light-mute">
                       Authorised and regulated by the
                       <a class="text-light" href="https://solicitors.lawsociety.org.uk/office/592552/woolfe-co-solicitors-ltd">Solicitors Regulation Authority</a>
-                      of England And Wales.
+                      of England And Wales. <br>
 
                       Registered Number: 625326
 
                       SRA ID: 625326
                       </p>
                                     </div>
-              <!-- Footer Slogan End -->
-
-              <!-- Footer Socials Start -->
               <div class="footer__socials column" >
                 <ul>
                   <li>
@@ -978,7 +967,6 @@
                   </li>
                 </ul>
               </div>
-              <!-- Footer Socials End -->
                <div class="row d-flex align-items-center justify-content-center">
                   <div class="col-md-12 col-sm-12 col-lg-12">
                       <hr class="line" />
@@ -987,16 +975,13 @@
                       <p class="rights text-light">All Rights Reserved © Copyright 2025 Woolfe &amp; Co Solicitors.</p>
                   </div>
                   <div class="col-md-6 col-sm-12 col-lg-6 justify-content-end d-flex ">
-                      <p class="p2 text-light">Designed by <a href="https://www.ssftech.co.uk/" target="_blank">SSF Tech</a> - Under the Provision of SSF Group</p>
+                      <p class="p2 text-light">Designed by <a href="https://www.ssftech.co.uk/" target="_blank" style="color: #fedd6c;">SSF Tech</a> - Under the Provision of SSF Group</p>
                   </div>
               </div>
-
-
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer Content End -->
 
     </footer>
     <!-- Footer End -->
