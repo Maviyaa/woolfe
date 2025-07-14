@@ -88,11 +88,12 @@
 }
 
 .inner-video {
-  background-image: url("https://dummyimage.com/1920x1280/383838/8d8d8d");
+  background-image: url("../img/1920x280.webp");
 }
 
 .menu-image-1 {
-  background-image: url("https://dummyimage.com/1200x1500/383838/8d8d8d");
+ background-image: url("../img/1200x500.webp");
+
 }
 
 /* ------------------------------------------------*/
