@@ -43,39 +43,48 @@
     <meta name="msapplication-navbutton-color" content="#111111">
     <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
     <style>
-        .lawyer-img {
-        width: 100%;
-        max-width: 220px;
-        height: 280px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin: 0 auto 15px;
-        display: block;
-      }
 
-      .lawyer-card {
-        background: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-        transition: transform 0.3s ease;
-      }
+.lawyer-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 10px;
+}
 
-      .lawyer-card:hover {
-        transform: translateY(-5px);
-      }
+.lawyer-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+}
 
-      .lawyer-card h4 {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: #00324b;
-      }
+.lawyer-info {
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+}
 
-      .lawyer-role {
-        font-size: 14px;
-        color: #777;
-      }
+.lawyer-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #00324b;
+}
+
+.lawyer-role {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+
       .inner__media.media-padding {
           padding: 100px 0 !important;
         }
@@ -609,86 +618,98 @@
 <section class="inner__media media-padding bg-light">
   <div class="media__wrapper">
 
-    <!-- Lawyers Section Heading -->
+    <!-- Section Heading -->
     <div class="section-title text-center" style="margin-bottom: 40px; text-align: center;">
-      <h2 class="text-dark" style="font-size: 6rem;-weight: 600;">Our Attorneys</h2>
-      <p class="section-text" style="color: #666; font-size: 16px;">Meet the legal minds behind Woolfe Law Firm</p>
+      <h2 class="text-dark" style="font-size: 6rem; font-weight: 600;">Our Attorneys</h2>
+      <p class="section-text" style="color: #666; font-size: 16px;">
+        Meet the legal minds behind Woolfe Law Firm
+      </p>
     </div>
 
-    <!-- Media Block - Lawyers -->
+    <!-- Lawyers Block -->
     <div class="media__partners">
       <div class="partners-content">
 
-        <!-- Lawyers Slider -->
+        <!-- Slider -->
         <div class="partners-slider">
           <div class="swiper-partners">
             <div class="swiper-wrapper">
 
-              <!-- Lawyer 1 -->
+              <!-- Lawyer Cards Start -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center">
+                <div class="lawyer-card">
                   <img src="img/lawyer.jpg" alt="Ashar Malik" class="lawyer-img">
-                  <h4>Ashar Malik</h4>
-                  <p class="lawyer-role">Solicitor</p>
+                  <div class="lawyer-info">
+                    <h4>Ashar Malik</h4>
+                    <p class="lawyer-role">Solicitor</p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Lawyer 2 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center">
+                <div class="lawyer-card">
                   <img src="img/alim.jpg" alt="Alim Hasan Islam" class="lawyer-img">
-                  <h4>Alim Hasan Islam</h4>
-                  <p class="lawyer-role">Casework Manager</p>
+                  <div class="lawyer-info">
+                    <h4>Alim Hasan Islam</h4>
+                    <p class="lawyer-role">Casework Manager</p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Lawyer 3 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center">
+                <div class="lawyer-card">
                   <img src="img/random.png" alt="Jasmine Ahmed" class="lawyer-img">
-                  <h4>Jasmine Ahmed</h4>
-                  <p class="lawyer-role">Required</p>
+                  <div class="lawyer-info">
+                    <h4>Jasmine Ahmed</h4>
+                    <p class="lawyer-role">Required</p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Lawyer 4 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center">
+                <div class="lawyer-card">
                   <img src="img/random.png" alt="Dewan" class="lawyer-img">
-                  <h4>Dewan</h4>
-                  <p class="lawyer-role">Required</p>
+                  <div class="lawyer-info">
+                    <h4>Dewan</h4>
+                    <p class="lawyer-role">Required</p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Lawyer 5 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center">
+                <div class="lawyer-card">
                   <img src="img/shakil.jpg" alt="Shakil Shah" class="lawyer-img">
-                  <h4>Shakil Shah</h4>
-                  <p class="lawyer-role">Solicitor</p>
+                  <div class="lawyer-info">
+                    <h4>Shakil Shah</h4>
+                    <p class="lawyer-role">Solicitor</p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Lawyer 6 -->
               <div class="swiper-slide">
-                <div class="lawyer-card text-center">
+                <div class="lawyer-card">
                   <img src="img/gias.jpg" alt="Gias Uddin" class="lawyer-img">
-                  <h4>Gias Uddin</h4>
-                  <p class="lawyer-role">Director/Solicitor</p>
+                  <div class="lawyer-info">
+                    <h4>Gias Uddin</h4>
+                    <p class="lawyer-role">Director/Solicitor</p>
+                  </div>
                 </div>
               </div>
+              <!-- Lawyer Cards End -->
 
             </div>
           </div>
         </div>
-        <!-- Lawyers Slider End -->
+        <!-- Slider End -->
 
       </div>
     </div>
-    <!-- Media Block - Lawyers End -->
+    <!-- Lawyers Block End -->
 
   </div>
 </section>
+
+
 
 
 
@@ -1133,6 +1154,9 @@
     <script src="js/libs.min.js"></script>
     <script src="js/gallery-init.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+      
+    </script>
     <!-- Load Scripts End -->
 
   </body>
