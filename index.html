@@ -43,48 +43,45 @@
     <meta name="msapplication-navbutton-color" content="#111111">
     <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
     <style>
+      .lawyer-img {
+        width: 100%;
+        /* max-width: 220px; */
+        height: 280px;
+        object-fit: cover;
+        object-position: top;
+        /* border-radius: 8px; */
+        /* margin: 0 auto 15px; */
+        display: block;
+      }
 
-.lawyer-card {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 0;
-  margin: 10px;
-}
+      .lawyer-card {
+        background: #fff;
+        /* padding: 15px; */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        transition: transform 0.3s ease;
+      }
 
-.lawyer-img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  display: block;
-  margin: 0;
-  border-radius: 0;
-}
+      .lawyer-card .content {
+        padding: 20px;
+      }
 
-.lawyer-info {
-  padding: 16px;
-  text-align: center;
-  background-color: #fff;
-}
+      .lawyer-card:hover {
+        transform: translateY(-5px);
+      }
 
-.lawyer-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 6px;
-  color: #00324b;
-}
+      .lawyer-card h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #00324b;
+      }
 
-.lawyer-role {
-  font-size: 14px;
-  color: #777;
-  margin: 0;
-}
-
-
+      .lawyer-role {
+        font-size: 14px;
+        color: #777;
+      }
       .inner__media.media-padding {
           padding: 100px 0 !important;
         }
@@ -520,8 +517,8 @@
                         <div class="row g-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                           <!-- gallery single item -->
                           <figure class="col-12 col-sm-6 col-xl-4 column my-gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://dummyimage.com/1000x1200/383838/8d8d8d" data-image="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
-                              <img src="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
+                            <a href="img/corporate.webp" data-image="img/corporate.webp" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
+                              <img src="img/corporate.webp" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption class="my-gallery__description" itemprop="caption description">
                               <h3 class="text-light">
@@ -533,8 +530,8 @@
                           </figure>
                           <!-- gallery single item -->
                           <figure class="col-12 col-sm-6 col-xl-4 column my-gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://dummyimage.com/1000x1200/383838/8d8d8d" data-image="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
-                              <img src="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
+                            <a href="img/family.webp" data-image="img/family.webp" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
+                              <img src="img/family.webp" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption class="my-gallery__description" itemprop="caption description">
                               <h3 class="text-light">
@@ -546,8 +543,8 @@
                           </figure>
                           <!-- gallery single item -->
                           <figure class="col-12 col-sm-6 col-xl-4 column my-gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://dummyimage.com/1000x1200/383838/8d8d8d" data-image="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
-                              <img src="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
+                            <a href="img/crminal-defence.webp" data-image="img/crminal-defence.webp" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
+                              <img src="img/crminal-defence.webp" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption class="my-gallery__description" itemprop="caption description">
                               <h3 class="text-light">
@@ -559,8 +556,8 @@
                           </figure>
                           <!-- gallery single item -->
                           <figure class="col-12 col-sm-6 col-xl-4 column my-gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://dummyimage.com/1000x1200/383838/8d8d8d" data-image="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
-                              <img src="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
+                            <a href="img/employement.webp" data-image="img/employement.webp" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
+                              <img src="img/employement.webp" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption class="my-gallery__description" itemprop="caption description">
                               <h3 class="text-light">
@@ -572,8 +569,8 @@
                           </figure>
                           <!-- gallery single item -->
                           <figure class="col-12 col-sm-6 col-xl-4 column my-gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://dummyimage.com/1000x1200/383838/8d8d8d" data-image="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
-                              <img src="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
+                            <a href="img/property.webp" data-image="img/property.webp" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
+                              <img src="img/property.webp" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption class="my-gallery__description" itemprop="caption description">
                               <h3 class="text-light">
@@ -585,8 +582,8 @@
                           </figure>
                           <!-- gallery single item -->
                           <figure class="col-12 col-sm-6 col-xl-4 column my-gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://dummyimage.com/1000x1200/383838/8d8d8d" data-image="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
-                              <img src="https://dummyimage.com/1000x1200/383838/8d8d8d" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
+                            <a href="img/civil.webp" data-image="img/civil.webp" class="my-gallery__link" itemprop="contentUrl" data-size="1000x1300">
+                              <img src="img/civil.webp" class="my-gallery__image" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption class="my-gallery__description" itemprop="caption description">
                               <h3 class="text-light">
@@ -618,98 +615,98 @@
 <section class="inner__media media-padding bg-light">
   <div class="media__wrapper">
 
-    <!-- Section Heading -->
+    <!-- Lawyers Section Heading -->
     <div class="section-title text-center" style="margin-bottom: 40px; text-align: center;">
-      <h2 class="text-dark" style="font-size: 6rem; font-weight: 600;">Our Attorneys</h2>
-      <p class="section-text" style="color: #666; font-size: 16px;">
-        Meet the legal minds behind Woolfe Law Firm
-      </p>
+      <h2 class="text-dark" style="font-size: 6rem;-weight: 600;">Our Attorneys</h2>
+      <p class="section-text" style="color: #666; font-size: 16px;">Meet the legal minds behind Woolfe Law Firm</p>
     </div>
 
-    <!-- Lawyers Block -->
+    <!-- Media Block - Lawyers -->
     <div class="media__partners">
       <div class="partners-content">
 
-        <!-- Slider -->
+        <!-- Lawyers Slider -->
         <div class="partners-slider">
           <div class="swiper-partners">
             <div class="swiper-wrapper">
 
-              <!-- Lawyer Cards Start -->
+              <!-- Lawyer 1 -->
               <div class="swiper-slide">
-                <div class="lawyer-card">
+                <div class="lawyer-card text-center">
                   <img src="img/lawyer.jpg" alt="Ashar Malik" class="lawyer-img">
-                  <div class="lawyer-info">
-                    <h4>Ashar Malik</h4>
-                    <p class="lawyer-role">Solicitor</p>
+                   <div class="content">
+                  <h4>Ashar Malik</h4>
+                  <p class="lawyer-role">Solicitor</p>
                   </div>
                 </div>
               </div>
 
+              <!-- Lawyer 2 -->
               <div class="swiper-slide">
-                <div class="lawyer-card">
+                <div class="lawyer-card text-center">
                   <img src="img/alim.jpg" alt="Alim Hasan Islam" class="lawyer-img">
-                  <div class="lawyer-info">
+                  <div class="content">
                     <h4>Alim Hasan Islam</h4>
                     <p class="lawyer-role">Casework Manager</p>
                   </div>
                 </div>
               </div>
 
+              <!-- Lawyer 3 -->
               <div class="swiper-slide">
-                <div class="lawyer-card">
+                <div class="lawyer-card text-center">
                   <img src="img/random.png" alt="Jasmine Ahmed" class="lawyer-img">
-                  <div class="lawyer-info">
-                    <h4>Jasmine Ahmed</h4>
-                    <p class="lawyer-role">Required</p>
+                  <div class="content">
+                  <h4>Jasmine Ahmed</h4>
+                  <p class="lawyer-role">Required</p>
                   </div>
                 </div>
               </div>
 
+              <!-- Lawyer 4 -->
               <div class="swiper-slide">
-                <div class="lawyer-card">
+                <div class="lawyer-card text-center">
                   <img src="img/random.png" alt="Dewan" class="lawyer-img">
-                  <div class="lawyer-info">
-                    <h4>Dewan</h4>
-                    <p class="lawyer-role">Required</p>
+                  <div class="content">
+                  <h4>Dewan</h4>
+                  <p class="lawyer-role">Required</p>
                   </div>
                 </div>
               </div>
 
+              <!-- Lawyer 5 -->
               <div class="swiper-slide">
-                <div class="lawyer-card">
+                <div class="lawyer-card text-center">
                   <img src="img/shakil.jpg" alt="Shakil Shah" class="lawyer-img">
-                  <div class="lawyer-info">
-                    <h4>Shakil Shah</h4>
-                    <p class="lawyer-role">Solicitor</p>
+                  <div class="content">
+                  <h4>Shakil Shah</h4>
+                  <p class="lawyer-role">Solicitor</p>
                   </div>
                 </div>
               </div>
 
+              <!-- Lawyer 6 -->
               <div class="swiper-slide">
-                <div class="lawyer-card">
+                <div class="lawyer-card text-center">
                   <img src="img/gias.jpg" alt="Gias Uddin" class="lawyer-img">
-                  <div class="lawyer-info">
-                    <h4>Gias Uddin</h4>
-                    <p class="lawyer-role">Director/Solicitor</p>
+                  <div class="content">
+                  <h4>Gias Uddin</h4>
+                  <p class="lawyer-role">Director/Solicitor</p>
                   </div>
                 </div>
               </div>
-              <!-- Lawyer Cards End -->
 
             </div>
           </div>
         </div>
-        <!-- Slider End -->
+        <!-- Lawyers Slider End -->
 
       </div>
     </div>
-    <!-- Lawyers Block End -->
+    <!-- Media Block - Lawyers End -->
 
   </div>
 </section>
-
-
 
 
 
@@ -1154,9 +1151,6 @@
     <script src="js/libs.min.js"></script>
     <script src="js/gallery-init.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      
-    </script>
     <!-- Load Scripts End -->
 
   </body>

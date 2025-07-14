@@ -125,6 +125,7 @@ $(function() {
       autoplay: true,
       speed: 500,
       loop: true,
+      centeredSlide: false,
       breakpoints: {
         1600: {
           slidesPerView: 5,
