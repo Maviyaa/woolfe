@@ -85,6 +85,22 @@
       .inner__media.media-padding {
           padding: 100px 0 !important;
         }
+        @media (max-width: 768px) {
+          .logo img {
+            width: 50%;
+          }
+          .logo{
+            left: 0vw;;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .logo img {
+            width: 70%;
+          }
+          .logo{
+              left: 0vw;;
+            }
+        }
 
     </style>
     <!-- Custom Browser Color End -->
@@ -293,9 +309,9 @@
                   <!-- local video background -->
                   <div class="video-background">
                     <video id="main-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="https://dummyimage.com/1440x900/383838/8d8d8d">
-                      <source type="video/mp4" src="https://video-previews.elements.envatousercontent.com/0fac21e4-360f-4a03-866c-6c9cfaa32838/watermarked_preview/watermarked_preview.mp4">
-                      <source type="video/webm" src="https://video-previews.elements.envatousercontent.com/0fac21e4-360f-4a03-866c-6c9cfaa32838/watermarked_preview/watermarked_preview.mp4">
-                      <source type="video/ogv" src="https://video-previews.elements.envatousercontent.com/0fac21e4-360f-4a03-866c-6c9cfaa32838/watermarked_preview/watermarked_preview.mp4">
+                      <source type="video/mp4" src="video/video.mp4">
+                      <source type="video/webm" src="video/video.webm">
+                      <source type="video/ogv" src="video/video.ogv">
                     </video>
                   </div>
                   <!-- Background Effect End -->
@@ -487,7 +503,7 @@
               <!-- Section Title Start -->
               <div class="col-12 col-lg-1 info__title">
                 <div class="title-content column">
-                  <span class="section-title text-light">Portfolio</span>
+                  <span class="section-title text-light">Previous Cases</span>
                 </div>
               </div>
               <!-- Section Title End -->
